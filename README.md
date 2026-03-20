@@ -13,8 +13,6 @@ This repository is organized into a modular structure to support full-stack educ
         * `multivariate.ipynb`: Full data analysis, preprocessing, and model training.
         * `best_educational_model.pkl`: The optimized Random Forest model for performance prediction.
         * `scaler.pkl`: The standardization tool used for consistent data input.
-    * **`API/`**: Backend services for model deployment (Placeholder).
-    * **`FlutterApp/`**: Mobile interface for student/admin interaction (Placeholder).
 
 ---
 
