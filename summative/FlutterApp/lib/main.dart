@@ -34,7 +34,7 @@ class PredictionPage extends StatefulWidget {
 
 class _PredictionPageState extends State<PredictionPage> {
   final _formKey = GlobalKey<FormState>();
-  
+
   final Map<String, TextEditingController> _controllers = {
     'Hours_Studied': TextEditingController(text: '15'),
     'Attendance': TextEditingController(text: '90'),
@@ -62,8 +62,9 @@ class _PredictionPageState extends State<PredictionPage> {
 
   Future<void> getPredictionFromAPI() async {
     setState(() => _isLoading = true);
-    
-    final url = Uri.parse('https://delucie-tudent-performance-api.hf.space/predict');
+
+    final url =
+        Uri.parse('https://delucie-tudent-performance-api.hf.space/predict');
 
     try {
       Map<String, dynamic> jsonData = {};
@@ -80,10 +81,12 @@ class _PredictionPageState extends State<PredictionPage> {
       if (response.statusCode == 200) {
         final data = jsonDecode(response.body);
         setState(() {
-          _predictionResult = "Predicted Score: ${data['predicted_exam_score']}%";
+          _predictionResult =
+              "Predicted Score: ${data['predicted_exam_score']}%";
         });
       } else {
-        setState(() => _predictionResult = "Error: API Response ${response.statusCode}");
+        setState(() =>
+            _predictionResult = "Error: API Response ${response.statusCode}");
       }
     } catch (e) {
       setState(() => _predictionResult = "Check Internet / API Status");
@@ -106,7 +109,8 @@ class _PredictionPageState extends State<PredictionPage> {
           key: _formKey,
           child: Column(
             children: [
-              const Text("Enter Student Parameters", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+              const Text("Enter Student Parameters",
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
               const SizedBox(height: 15),
               ..._controllers.entries.map((entry) {
                 return Padding(
@@ -123,32 +127,34 @@ class _PredictionPageState extends State<PredictionPage> {
                 );
               }).toList(),
               const SizedBox(height: 25),
-              _isLoading 
-                ? const CircularProgressIndicator()
-                : ElevatedButton.icon(
-                    onPressed: getPredictionFromAPI,
-                    icon: const Icon(Icons.analytics),
-                    label: const Text("PREDICT NOW"),
-                    style: ElevatedButton.styleFrom(
-                      minimumSize: const Size(double.infinity, 55),
-                      backgroundColor: Colors.indigo,
-                      foregroundColor: Colors.white,
-                      textStyle: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold)
+              _isLoading
+                  ? const CircularProgressIndicator()
+                  : ElevatedButton.icon(
+                      onPressed: getPredictionFromAPI,
+                      icon: const Icon(Icons.analytics),
+                      label: const Text("PREDICT NOW"),
+                      style: ElevatedButton.styleFrom(
+                          minimumSize: const Size(double.infinity, 55),
+                          backgroundColor: Colors.indigo,
+                          foregroundColor: Colors.white,
+                          textStyle: const TextStyle(
+                              fontSize: 18, fontWeight: FontWeight.bold)),
                     ),
-                  ),
               const SizedBox(height: 30),
               Container(
                 width: double.infinity,
                 padding: const EdgeInsets.all(25),
                 decoration: BoxDecoration(
-                  color: Colors.indigo.withOpacity(0.1),
-                  borderRadius: BorderRadius.circular(15),
-                  border: Border.all(color: Colors.indigo, width: 2)
-                ),
+                    color: Colors.indigo.withValues(alpha: 0.1),
+                    borderRadius: BorderRadius.circular(15),
+                    border: Border.all(color: Colors.indigo, width: 2)),
                 child: Text(
                   _predictionResult,
                   textAlign: TextAlign.center,
-                  style: const TextStyle(fontSize: 26, fontWeight: FontWeight.bold, color: Colors.indigo),
+                  style: const TextStyle(
+                      fontSize: 26,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.indigo),
                 ),
               ),
               const SizedBox(height: 40),
