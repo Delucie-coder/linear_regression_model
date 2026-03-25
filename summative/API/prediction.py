@@ -24,7 +24,7 @@ app.add_middleware(
 
 # 3. Load Model and Scaler
 try:
-    model = joblib.load("best_model.pkl")
+    model = joblib.load("best_educational_model.pkl")
     scaler = joblib.load("scaler.pkl")
 except Exception as e:
     print(f"Error loading model files: {e}")
