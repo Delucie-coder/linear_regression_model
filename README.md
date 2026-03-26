@@ -17,10 +17,12 @@ This repository is organized into a modular structure to support full-stack educ
 
 ### Technical Overview
 The predictive model was developed using a **RICH dataset** of student factors. Key technical milestones include:
+* **Volume & Variety:** The dataset contains 10,000 student records across 19 diverse features, including academic, environmental, and socio-economic variables.
+* **Data Source:** https://www.kaggle.com/datasets/lainguyn123/student-performance-factors
 * **Data Optimization:** Implemented Ordinal Encoding to preserve the rank of socio-economic factors.
 * **Gradient Descent:** Optimized a Linear Regression model via Stochastic Gradient Descent (SGD) to track convergence.
 * **Model Selection:** Evaluated Linear Regression, Decision Trees, and Random Forests, saving the model with the **Least Loss**.
-* **Clarity:** Integrated advanced visualizations, including Correlation Heatmaps and Fit Scatter Plots, to interpret academic trends.
+* **Visualisations:** Integrated advanced visualizations, including Correlation Heatmaps and Fit Scatter Plots, to interpret academic trends.
 
 ---
 
