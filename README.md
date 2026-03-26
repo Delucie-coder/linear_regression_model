@@ -64,3 +64,15 @@ The predictive model was developed using a **RICH dataset** of student factors. 
 - **Framework:** Flutter (Dart)
 
 - **Features:** Real-time API consumption, dynamic input validation, and responsive UI for student score prediction.
+
+---
+
+##  How to Run the Mobile App
+To run the Flutter application locally:
+1. Ensure you have the [Flutter SDK](https://docs.flutter.dev/get-started/install) installed.
+2. Clone this repository: `git clone [https://github.com/Delucie-coder/linear_regression_model.git]`
+3. Navigate to the project folder: `cd summative/FlutterApp`
+4. Fetch dependencies: `flutter pub get`
+5. Run the app: 
+   - For Web: `flutter run -d chrome`
+   - For Mobile: Ensure an emulator is running and use `flutter run`
