@@ -1,4 +1,5 @@
 # Student Performance Analysis: Breaking Educational Barriers
+[TASK 1] Data Science & Model Training
 
 ### Mission Statement
 My mission is to leverage data science to provide actionable insights into student academic success. By identifying key features that impact performance, this project aims to support proactive educational interventions.
@@ -30,7 +31,7 @@ The predictive model was developed using a **RICH dataset** of student factors. 
 
 ---
 
-## 🌐 [TASK 2 & 3] API & Deployment
+## [TASK 2 & 3] API & Deployment
 
 *This section details the FastAPI implementation and cloud hosting.*
 
@@ -52,7 +53,7 @@ The predictive model was developed using a **RICH dataset** of student factors. 
 
 
 
-## 📱 [TASK 4] Mobile Application
+## [TASK 4] Mobile Application
 
 *This section details the Flutter frontend implementation.*
 
