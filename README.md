@@ -1,7 +1,7 @@
 # Student Performance Analysis: Breaking Educational Barriers
 
 ### Mission Statement
-This project leverages machine learning to identify key socio-economic and academic factors that impact student success. By analyzing these performance drivers, we aim to develop data-driven tools that bridge educational gaps and provide targeted support for learners in underserved communities.
+My mission is to leverage data science to provide actionable insights into student academic success. By identifying key features that impact performance, this project aims to support proactive educational interventions.
 
 ---
 
@@ -11,8 +11,6 @@ This repository is organized into a modular structure to support full-stack educ
 * **`summative/`**: Core project directory.
     * **`linear_regression/`**: Contains the Machine Learning pipeline.
         * `multivariate.ipynb`: Full data analysis, preprocessing, and model training.
-        * `best_educational_model.pkl`: The optimized Random Forest model for performance prediction.
-        * `scaler.pkl`: The standardization tool used for consistent data input.
 
 ---
 
@@ -29,3 +27,37 @@ The predictive model was developed using a **RICH dataset** of student factors. 
 1. Ensure `StudentPerformanceFactors.csv` is in your working directory.
 2. Run the `multivariate.ipynb` notebook to see the full training lifecycle.
 3. Use the `best_educational_model.pkl` and `scaler.pkl` to make real-time predictions on new student data.
+
+---
+
+## 🌐 [TASK 2 & 3] API & Deployment
+
+*This section details the FastAPI implementation and cloud hosting.*
+
+
+
+- **Backend:** FastAPI
+
+- **Host:** Hugging Face Spaces
+
+- **Features:** Includes Pydantic data validation and CORS middleware.
+
+- **Retraining:** A `/retrain` endpoint is implemented to allow for model updates as new data is collected.
+
+- **Swagger Documentation:** https://delucie-tudent-performance-api.hf.space/docs
+
+
+
+---
+
+
+
+## 📱 [TASK 4] Mobile Application
+
+*This section details the Flutter frontend implementation.*
+
+
+
+- **Framework:** Flutter (Dart)
+
+- **Features:** Real-time API consumption, dynamic input validation, and responsive UI for student score prediction.
