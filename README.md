@@ -47,9 +47,9 @@ The predictive model was developed using a **RICH dataset** of student factors. 
 
 - **Retraining:** A `/retrain` endpoint is implemented to allow for model updates as new data is collected.
 
+- **Huggingface link:** https://huggingface.co/spaces/delucie/tudent-performance-api 
 - **Swagger Documentation:** https://delucie-tudent-performance-api.hf.space/docs
-
-
+- **Link to the youtube video:** https://www.youtube.com/watch?v=UstfOK_wu1M
 
 ---
 

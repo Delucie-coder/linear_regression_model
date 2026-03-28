@@ -1,48 +1,17 @@
-# Flutter Linear Regression Model App
+# student_alu
 
-This Flutter application serves as a client for a linear regression model API built with FastAPI. It allows users to interact with the model and visualize the results.
+A new Flutter project.
 
-## Project Structure
+## Getting Started
 
-```
-FlutterApp
-├── android                # Android platform-specific code
-├── ios                    # iOS platform-specific code
-├── lib                    # Main application code
-│   ├── main.dart          # Entry point of the application
-│   ├── screens            # Contains all screen widgets
-│   │   └── home_screen.dart # Main screen of the application
-│   ├── services           # Contains services for API interaction
-│   │   └── api_service.dart # Handles HTTP requests to the backend
-│   └── widgets            # Contains reusable widgets
-│       └── custom_widget.dart # Custom UI components
-├── test                   # Contains unit and widget tests
-│   └── widget_test.dart    # Tests for the widgets
-├── pubspec.yaml           # Project configuration and dependencies
-└── README.md              # Project documentation
-```
+This project is a starting point for a Flutter application.
 
-## Setup Instructions
+A few resources to get you started if this is your first Flutter project:
 
-1. **Clone the repository**:
-   ```bash
-   git clone <repository-url>
-   cd FlutterApp
-   ```
+- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
+- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
 
-2. **Install dependencies**:
-   Make sure you have Flutter installed on your machine. Run the following command to get the required packages:
-   ```bash
-   flutter pub get
-   ```
-
-3. **Run the application**:
-   Use the following command to run the app:
-   ```bash
-   flutter run
-   ```
-
-## Usage
-
-- The application connects to a FastAPI backend to perform linear regression predictions.
-- Navigate to the home screen to input data and view predictions.
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.

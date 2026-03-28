@@ -1,10 +1,10 @@
 {
   "roots": [
-    "FlutterApp"
+    "flutter_app"
   ],
   "packages": [
     {
-      "name": "FlutterApp",
+      "name": "flutter_app",
       "version": "1.0.0+1",
       "dependencies": [
         "flutter",
@@ -155,7 +155,7 @@
     },
     {
       "name": "async",
-      "version": "2.13.0",
+      "version": "2.13.1",
       "dependencies": [
         "collection",
         "meta"
